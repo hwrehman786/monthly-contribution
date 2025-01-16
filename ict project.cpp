@@ -1,7 +1,6 @@
 
 #include <iostream>
 using namespace std;
-
 int main() {
     double savingsGoal, monthlyContribution, currentSavings = 0;
     int months, choice;
@@ -17,8 +16,9 @@ int main() {
     monthlyContribution = savingsGoal / months;
 
     cout << "Monthly contribution needed to reach your goal: $" << monthlyContribution << endl;
-
-    while (true) {
+    cout << "Monthly contribution needed to reach your goal: $" << monthlyContribution << endl;
+    while (true) 
+	{
         cout << "\nMenu" << endl;
         cout << "-----" << endl;
         cout << "1. Track progress" << endl;
@@ -28,7 +28,8 @@ int main() {
         cout << "Enter your choice: ";
         cin >> choice;
 
-        if (choice == 1) {
+        if (choice == 1) 
+		{
             if (months <= 0) {
                 cout << "Invalid number of months. Please update." << endl;
             } else {
