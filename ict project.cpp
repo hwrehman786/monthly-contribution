@@ -1,7 +1,7 @@
-
 #include <iostream>
 using namespace std;
-int main() {
+int main() 
+{
     double savingsGoal, monthlyContribution, currentSavings = 0;
     int months, choice;
 
@@ -30,40 +30,60 @@ int main() {
 
         if (choice == 1) 
 		{
-            if (months <= 0) {
+            if (months <= 0) 
+			{
                 cout << "Invalid number of months. Please update." << endl;
-            } else {
-                for (int i = 1; i <= months; i++) {
+            } 
+			else 
+			{
+                for (int i = 1; i <= months; i++) 
+				{
                     currentSavings += monthlyContribution;
                     cout << "Month " << i << ": Current savings = $" << currentSavings << endl;
                 }
-                if (currentSavings >= savingsGoal) {
+                if (currentSavings >= savingsGoal) 
+				{
                     cout << "Congratulations! You have reached your savings goal." << endl;
-                } else {
+                } else 
+				{
                     cout << "Sorry, you have not reached your savings goal." << endl;
                 }
             }
-        } else if (choice == 2) {
-            if (savingsGoal <= 0) {
+        } 
+		else if (choice == 2) 
+		{
+            if (savingsGoal <= 0) 
+			{
                 cout << "Invalid savings goal. Please enter a positive value." << endl;
-            } else {
+            } 
+			else 
+			{
                 cout << "Enter new savings goal: $";
                 cin >> savingsGoal;
                 monthlyContribution = savingsGoal / months;
                 cout << "Monthly contribution updated to: $" << monthlyContribution << endl;
             }
-        } else if (choice == 3) {
-            if (months <= 0) {
+        } 
+		else if (choice == 3) 
+		{
+            if (months <= 0) 
+			{
                 cout << "Invalid number of months. Please enter a positive value." << endl;
-            } else {
+            } 
+			else 
+			{
                 cout << "Enter new number of months: ";
                 cin >> months;
                 monthlyContribution = savingsGoal / months;
                 cout << "Monthly contribution updated to: $" << monthlyContribution << endl;
             }
-        } else if (choice == 4) {
+        } 
+		else if (choice == 4) 
+		{
             return 0;
-        } else {
+        }
+		else 
+		{
             cout << "Invalid choice. Please try again." << endl;
         }
     }
