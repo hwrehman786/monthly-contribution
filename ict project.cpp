@@ -16,7 +16,7 @@ int main() {
     monthlyContribution = savingsGoal / months;
 
     cout << "Monthly contribution needed to reach your goal: $" << monthlyContribution << endl;
-    cout << "Monthly contribution needed to reach your goal: $" << monthlyContribution << endl;
+  
     while (true) 
 	{
         cout << "\nMenu" << endl;
